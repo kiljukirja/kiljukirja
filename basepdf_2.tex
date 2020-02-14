@@ -1,14 +1,17 @@
 \documentclass[a4]{article}
+\usepackage[margin=0.1in]{geometry}
 \usepackage[final]{pdfpages}
+
+
 \begin{document}
 
-\includepdf[frame, pages=4]{basepdf_1.pdf}
-\includepdf[frame, pages=5]{basepdf_1.pdf}
-\includepdf[frame, pages=8]{basepdf_1.pdf}
-\includepdf[frame, pages=1]{basepdf_1.pdf}
-\includepdf[frame, pages=3, angle=180]{basepdf_1.pdf}
-\includepdf[frame, pages=6, angle=180]{basepdf_1.pdf}
-\includepdf[frame, pages=7, angle=180]{basepdf_1.pdf}
-\includepdf[frame, pages=2, angle=180]{basepdf_1.pdf}
+\includepdf[pages=6]{basepdf_1.pdf} % sivu 6
+\includepdf[pages=7]{basepdf_1.pdf} % sivu 7
+\includepdf[pages=8]{basepdf_1.pdf} % sivu 8
+\includepdf[pages=1]{basepdf_1.pdf} % sivu 1 (kansi)
+\includepdf[pages=5, angle=180]{basepdf_1.pdf} % sivu 5
+\includepdf[pages=4, angle=180]{basepdf_1.pdf} % sivu 4
+\includepdf[pages=3, angle=180]{basepdf_1.pdf} % sivu 3
+\includepdf[pages=2, angle=180]{basepdf_1.pdf} % sivu 2
 
 \end{document}
